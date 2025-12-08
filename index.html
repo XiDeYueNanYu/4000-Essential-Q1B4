@@ -312,7 +312,7 @@
         width: 95%;
         max-width: 700px;
         margin: 20px auto;
-        padding-top: 150px;
+        padding-top: 30px;
         position: relative;
     }
 
@@ -408,7 +408,7 @@
 
     .letter-btn.used {
         opacity: 0.35;
-        pointer-events: none;
+        /* ĐÃ SỬA: Bỏ pointer-events: none để cho phép nhấn lại vào nút đã mờ */
     }
 
     .letter-btn-in-answer {
@@ -601,6 +601,7 @@
         // =================================================================================
         //                                      PHẦN DỮ LIỆU
         // =================================================================================
+
 const textContentData = [
             `The Dog’s Bell：         
 John’s dog was a bad dog. He bit people frequently. John had great concern about this. It was not an appropriate way for a dog to behave. His friends in the village always expected the dog to bite them. The news about John’s dog spread through the village. None of the people wanted to go to John’s house. John tried to instruct the dog to behave, but it never worked. He tried to be patient and teach the dog to be calm. That also didn’t work. John didn’t want to punish the dog. “How will I stop my dog’s bad habit?” John asked himself.
@@ -678,6 +679,7 @@ You see, being popular isn’t something positive when it’s for the wrong reas
 ];const ipaArray = [
     "/ðə/", "/dɒɡz/", "/bel/", "/dʒɒnz/", "/dɒɡ/", "/wɒz/", "/ə/", "/bæd/", "/dɒɡ/", "/hiː/", "/bɪt/", "/ˈpiːpl/", "/ˈfriːkwəntli/", "/dʒɒn/", "/hæd/", "/ɡreɪt/", "/kənˈsɜːn/", "/əˈbaʊt/", "/ðɪs/", "/ɪt/", "/wɒz/", "/nɒt/", "/ən/", "/əˈprəʊpriət/", "/weɪ/", "/fə/", "/ə/", "/dɒɡ/", "/tə/", "/bɪˈheɪv/", "/hɪz/", "/frendz/", "/ɪn/", "/ðə/", "/ˈvɪlɪdʒ/", "/ˈɔːlweɪz/", "/ɪkˈspektɪd/", "/ðə/", "/dɒɡ/", "/tə/", "/baɪt/", "/ðəm/", "/ðə/", "/njuːz/", "/əˈbaʊt/", "/dʒɒnz/", "/dɒɡ/", "/spred/", "/θruː/", "/ðə/", "/ˈvɪlɪdʒ/", "/nʌn/", "/əv/", "/ðə/", "/ˈpiːpl/", "/ˈwɒntɪd/", "/tə/", "/ɡəʊ/", "/tə/", "/dʒɒnz/", "/haʊs/", "/dʒɒn/", "/traɪd/", "/tə/", "/ɪnˈstrʌkt/", "/ðə/", "/dɒɡ/", "/tə/", "/bɪˈheɪv/", "/bʌt/", "/ɪt/", "/ˈnevə/", "/wɜːkt/", "/hiː/", "/traɪd/", "/tə/", "/biː/", "/ˈpeɪʃnt/", "/ənd/", "/tiːtʃ/", "/ðə/", "/dɒɡ/", "/tə/", "/biː/", "/kɑːm/", "/ðæt/", "/ˈɔːlsəʊ/", "/ˈdɪdnt/", "/wɜːk/", "/dʒɒn/", "/ˈdɪdnt/", "/wɒnt/", "/tə/", "/ˈpʌnɪʃ/", "/ðə/", "/dɒɡ/", "/haʊ/", "/wɪl/", "/aɪ/", "/stɒp/", "/maɪ/", "/dɒɡz/", "/bæd/", "/ˈhæbɪt/", "/dʒɒn/", "/ɑːskt/", "/hɪmˈself/", "/dʒɒnz/", "/frend/", "/keɪm/", "/tə/", "/tɔːk/", "/tə/", "/hɪm/", "/əˈbaʊt/", "/ðə/", "/ˈɪʃuː/", "/ˈdjʊərɪŋ/", "/ðeə/", "/ɪmˈpɔːtnt/", "/ˈmiːtɪŋ/", "/hɪz/", "/frend/", "/sed/", "/ðə/", "/ˈpiːpl/", "/ɪn/", "/ðə/", "/ˈvɪlɪdʒ/", "/ɑːskt/", "/miː/", "/tə/", "/ˌreprɪˈzent/", "/ðəm/", "/wiː/", "/wɒnt/", "/jɔː/", "/dɒɡ/", "/tə/", "/stɒp/", "/ðɪs/", "/ˈhæbɪt/", "/waɪ/", "/dəʊnt/", "/juː/", "/pʊt/", "/ə/", "/bel/", "/əˈraʊnd/", "/ðə/", "/dɒɡz/", "/nek/", "/ðɪs/", "/weɪ/", "/wiː/", "/wʊd/", "/hɪə/", "/jɔː/", "/dɒɡ/", "/ˈkʌmɪŋ/", "/daʊn/", "/ðə/", "/striːt/", "/dʒɒn/", "/θɔːt/", "/ðɪs/", "/wɒz/", "/ə/", "/ɡreɪt/", "/aɪˈdɪə/", "/naʊ/", "/ˈpiːpl/", "/kʊd/", "/steɪ/", "/əˈweɪ/", "/frəm/", "/ðə/", "/dɒɡ/", "/ɪt/", "/wʊd/", "/nɒt/", "/biː/", "/ˈeɪbl/", "/tə/", "/baɪt/", "/ˈeniwʌn/", "/ˌeniˈmɔː/", "/ðə/", "/dɒɡ/", "/laɪkt/", "/ðə/", "/bel/", "/tuː/", "/ˈpiːpl/", "/lʊkt/", "/ət/", "/hɪm/", "/wen/", "/ðeɪ/", "/hɜːd/", "/hɪz/", "/bel/", "/ðɪs/", "/meɪd/", "/ðə/", "/dɒɡ/", "/ˈveri/", "/kənˈtent/", "/hiː/", "/laɪkt/", "/ðə/", "/sɒŋ/", "/ðə/", "/bel/", "/pleɪd/", "/wen/", "/hiː/", "/wɔːkt/", "/wʌn/", "/deɪ/", "/dʒɒnz/", "/dɒɡ/", "/strəʊld/", "/θruː/", "/ðə/", "/ˈvɪlɪdʒ/", "/ənd/", "/met/", "/sʌm/", "/ˈʌðə/", "/dɒɡz/", "/hiː/", "/ɪkˈspektɪd/", "/ðəm/", "/tə/", "/wɒnt/", "/ə/", "/bel/", "/laɪk/", "/hɪz/", "/bʌt/", "/ðeɪ/", "/lɑːft/", "/ət/", "/hɪz/", "/bel/", "/ðeɪ/", "/sed/", "/ðə/", "/bel/", "/meɪd/", "/ˈpiːpl/", "/əˈvɔɪd/", "/hɪm/", "/dʒɒnz/", "/dɒɡ/", "/ʃʊk/", "/hɪz/", "/hed/", "/nəʊ/", "/ðeɪ/", "/lʊk/", "/ət/", "/miː/", "/bɪˈkɒz/", "/ðeɪ/", "/laɪk/", "/ðə/", "/bel/", "/ðə/", "/ˈʌðə/", "/dɒɡz/", "/sed/", "/juː/", "/hæv/", "/ðə/", "/rɒŋ/", "/aɪˈdɪə/", "/əv/", "/wɒt/", "/meɪks/", "/juː/", "/ˈpɒpjələ/", "/əv/", "/kɔːs/", "/ðeɪ/", "/laɪk/", "/jɔː/", "/bel/", "/ɪt/", "/telz/", "/ðəm/", "/weə/", "/juː/", "/ɑː/", "/səʊ/", "/ðeɪ/", "/kæn/", "/əˈvɔɪd/", "/juː/", "/juː/", "/ɑːnt/", "/ˈeɪbl/", "/tə/", "/baɪt/", "/ðəm/", "/ˌeniˈmɔː/", "/juː/", "/siː/", "/ˈbiːɪŋ/", "/ˈpɒpjələ/", "/ˈɪznt/", "/ˈsʌmθɪŋ/", "/ˈpɒzətɪv/", "/wen/", "/ɪts/", "/fə/", "/ðə/", "/rɒŋ/", "/ˈriːzn/"
 ];
+
         // TẠO MẢNG TỪ VỰNG MỚI: Bao gồm tất cả các từ và từ lặp lại
         const uniqueVocab = englishWordsArray.map(word => word.replace(/’/g, "'").toLowerCase());
 
@@ -736,8 +738,14 @@ You see, being popular isn’t something positive when it’s for the wrong reas
         
         let currentMode = 'reading'; // 'reading' or 'vocab'
         let currentVocabIndex = 0;
-        let selectedLetters = [];
+        // Cải tiến: Lưu trữ ID duy nhất của nút Pool đã được chọn
+        let selectedLetters = []; 
         let isChecking = false;
+
+        // BIẾN MỚI: Lưu trạng thái hiển thị của Audio Controls
+        let isControlsHidden = true; // Mặc định ẩn (hiển thị nút "示")
+        // BIẾN MỚI: Lưu vị trí cuộn
+        let scrollPosition = 0;
 
         // =================================================================================
         //                                      CHỨC NĂNG CHUNG
@@ -746,7 +754,6 @@ You see, being popular isn’t something positive when it’s for the wrong reas
         function shuffleArray(a) {
             const arr = [...a];
             for (let i = arr.length - 1; i > 0; i--) {
-                // ĐÃ SỬA LỖI: Sử dụng Math.random()
                 const j = Math.floor(Math.random() * (i + 1)); 
                 [arr[i], arr[j]] = [arr[j], arr[i]];
             }
@@ -759,6 +766,19 @@ You see, being popular isn’t something positive when it’s for the wrong reas
             textContent.style.paddingTop = `${verticalPadding}px`;
             textContent.style.paddingBottom = `${verticalPadding}px`;
         }
+        
+        // HÀM MỚI: Cập nhật hiển thị Audio Controls dựa trên biến trạng thái
+        function updateAudioControlsDisplay() {
+            if (isControlsHidden) {
+                floatingControls.style.display = 'none';
+                showControlsButton.style.display = 'flex';
+                toggleControlsButton.textContent = '藏'; // Giữ nguyên chữ
+            } else {
+                floatingControls.style.display = 'block';
+                showControlsButton.style.display = 'none';
+                toggleControlsButton.textContent = '示'; // Giữ nguyên chữ
+            }
+        }
 
         function switchMode(mode) {
             currentMode = mode;
@@ -766,19 +786,21 @@ You see, being popular isn’t something positive when it’s for the wrong reas
                 readingModeDiv.style.display = 'flex';
                 vocabModeDiv.style.display = 'none';
                 
-                // Hiển thị hoặc ẩn controls dựa trên trạng thái cuối cùng
-                if (floatingControls.style.display !== 'none' || showControlsButton.style.display === 'flex') {
-                    showControlsButton.style.display = 'flex'; // Mặc định ở chế độ thu gọn nếu chưa ẩn
-                }
-                if (showControlsButton.style.display === 'flex') {
-                    floatingControls.style.display = 'none';
-                } else {
-                    floatingControls.style.display = 'block';
-                }
+                // 1. Khôi phục trạng thái Audio Controls
+                updateAudioControlsDisplay(); 
+                
+                // 2. Khôi phục vị trí cuộn
+                setTimeout(() => {
+                    window.scrollTo(0, scrollPosition);
+                }, 0); 
 
                 contentModeBtn.classList.add('active-mode');
                 vocabModeBtn.classList.remove('active-mode');
             } else if (mode === 'vocab') {
+                
+                // 3. Lưu vị trí cuộn hiện tại trước khi ẩn nội dung
+                scrollPosition = window.scrollY; 
+                
                 readingModeDiv.style.display = 'none';
                 vocabModeDiv.style.display = 'block';
                 
@@ -791,9 +813,20 @@ You see, being popular isn’t something positive when it’s for the wrong reas
                 
                 // Khởi tạo chế độ luyện từ
                 initializeVocabMode();
+                
+                contentModeBtn.classList.remove('active-mode');
+                vocabModeBtn.classList.add('active-mode');
             }
         }
         
+        // Thêm event listener để lưu vị trí cuộn khi người dùng cuộn (chỉ trong Reading Mode)
+        window.addEventListener('scroll', () => {
+            if (currentMode === 'reading') {
+                scrollPosition = window.scrollY;
+            }
+        });
+
+
         // =================================================================================
         //                                      PHẦN READING MODE (Nội dung)
         // =================================================================================
@@ -851,8 +884,7 @@ You see, being popular isn’t something positive when it’s for the wrong reas
             while (i < text.length) {
                 let matched = false;
                 
-                <!-- const wordRegex = /^(\w+['’]\w+|\w+)([.,!?;:"'’]?)(\s*)/i;  -->
-                                const wordRegex = /^([\w'’-]+)([.,!?;:"\)]?)(\s*)/i;
+                const wordRegex = /^([\w'’-]+)([.,!?;:"\)]?)(\s*)/i;
                 const wordMatch = text.slice(i).match(wordRegex);
                     
                 if (wordMatch) {
@@ -1020,18 +1052,18 @@ You see, being popular isn’t something positive when it’s for the wrong reas
             forward5sButton.disabled = false;
         };
         
-        // --- LOGIC NÚT THU GỌN/HIỂN THỊ MỚI ---
+        // --- LOGIC NÚT THU GỌN/HIỂN THỊ CÓ LƯU TRẠNG THÁI ---
 
         // Nút '藏' (Thu gọn)
         toggleControlsButton.onclick = () => {
-            floatingControls.style.display = 'none';
-            showControlsButton.style.display = 'flex'; // Hiển thị nút "示"
+            isControlsHidden = true;
+            updateAudioControlsDisplay();
         };
 
         // Nút '示' (Hiển thị đầy đủ)
         showControlsButton.onclick = () => {
-            floatingControls.style.display = 'block';
-            showControlsButton.style.display = 'none'; // Ẩn nút "示"
+            isControlsHidden = false;
+            updateAudioControlsDisplay();
         };
 
 
@@ -1069,25 +1101,53 @@ You see, being popular isn’t something positive when it’s for the wrong reas
             renderSelectedLetters();
         }
 
+        // Cải tiến: Thêm ID duy nhất và logic hủy chọn khi click lại vào Pool
         function renderLetterPool(letters) {
             letterPoolDiv.innerHTML = '';
-            letters.forEach(letter => {
+            letters.forEach((letter, index) => {
                 const btn = document.createElement('div');
                 btn.className = 'letter-btn';
                 btn.textContent = letter;
-                btn.onclick = () => selectLetter(letter, btn);
+                // Thêm ID duy nhất để theo dõi, kể cả với ký tự trùng lặp
+                btn.dataset.poolId = `pool-${index}`;
+                
+                btn.onclick = () => {
+                    // YÊU CẦU: Nhấn vào nút đã mờ trong pool để hủy chọn
+                    if (btn.classList.contains('used')) {
+                        removeLetterFromPool(btn.dataset.poolId);
+                    } else {
+                        // Chọn ký tự mới
+                        selectLetter(letter, btn);
+                    }
+                };
                 letterPoolDiv.appendChild(btn);
             });
         }
 
+        // Cải tiến: Lưu ID của nút Pool đã dùng
+        function selectLetter(letter, btn) {
+            // Chỉ thêm nếu nút chưa được đánh dấu là 'used' (mặc dù đã bỏ pointer-events: none, ta vẫn cần kiểm tra)
+            if (btn.classList.contains('used')) return; 
+
+            selectedLetters.push({ 
+                letter: letter, 
+                poolId: btn.dataset.poolId // LƯU ID DUY NHẤT
+            });
+            btn.classList.add('used');
+            renderSelectedLetters();
+            selectedLettersDiv.classList.remove('correct', 'wrong');
+        }
+
+        // Cải tiến: Nút Answer gọi hàm hủy chọn bằng Index
         function renderSelectedLetters() {
             selectedLettersDiv.innerHTML = '';
             selectedLetters.forEach((item, index) => {
                 const btn = document.createElement('div');
                 btn.className = 'letter-btn letter-btn-in-answer';
                 btn.textContent = item.letter;
-                // Truyền index để xóa đúng phần tử
-                btn.onclick = () => removeLetter(index, item.originalBtnText); 
+                // Answer button click: call removeLetterByIndex with the index
+                // YÊU CẦU: Cho phép hủy bất cứ ký tự nào trong phần trả lời
+                btn.onclick = () => removeLetterByIndex(index); 
                 selectedLettersDiv.appendChild(btn);
             });
             
@@ -1097,29 +1157,38 @@ You see, being popular isn’t something positive when it’s for the wrong reas
             }
         }
         
-        function selectLetter(letter, btn) {
-            selectedLetters.push({ letter: letter, originalBtnText: btn.textContent });
-            btn.classList.add('used');
-            renderSelectedLetters();
-            selectedLettersDiv.classList.remove('correct', 'wrong');
-        }
-
-        function removeLetter(index, originalText) {
-            // Lấy ký tự đang bị xóa
+        // HÀM MỚI: Hủy chọn từ Answer Box (index)
+        function removeLetterByIndex(index) {
+            // 1. Lấy object bị xóa và xóa khỏi mảng
             const removedItem = selectedLetters.splice(index, 1)[0]; 
             
-            // Tìm nút TƯƠNG ỨNG đầu tiên trong pool đang bị 'used' và kích hoạt lại
-            const allBtns = Array.from(letterPoolDiv.children);
-            const firstUsedBtn = allBtns.find(b => b.textContent === removedItem.originalBtnText && b.classList.contains('used'));
+            // 2. Tìm nút gốc trong Pool bằng poolId và kích hoạt lại
+            const originalPoolBtn = document.querySelector(`#letterPool .letter-btn[data-pool-id="${removedItem.poolId}"]`);
             
-            if (firstUsedBtn) {
-                 firstUsedBtn.classList.remove('used');
+            if (originalPoolBtn) {
+                 originalPoolBtn.classList.remove('used');
             }
 
+            // 3. Render lại và reset trạng thái
             isChecking = false;
-            renderSelectedLetters();
+            renderSelectedLetters(); 
             selectedLettersDiv.classList.remove('correct', 'wrong');
         }
+
+        // HÀM MỚI: Hủy chọn từ Pool (poolId)
+        function removeLetterFromPool(poolId) {
+            // Tìm index của ký tự đầu tiên trong selectedLetters có poolId này
+            const indexToRemove = selectedLetters.findIndex(item => item.poolId === poolId);
+            
+            if (indexToRemove !== -1) {
+                // Sử dụng hàm hủy chọn đã tạo (cũng sẽ kích hoạt lại nút Pool)
+                removeLetterByIndex(indexToRemove);
+            }
+        }
+        
+        // --- LOGIC CŨ (Đã bị loại bỏ) ---
+        // function removeLetter(index, originalText) { ... }
+
 
         function checkVocabAnswer() {
             const userAnswer = selectedLetters.map(item => item.letter).join('');
@@ -1177,6 +1246,10 @@ You see, being popular isn’t something positive when it’s for the wrong reas
         vocabModeBtn.addEventListener('click', () => switchMode('vocab'));
 
         initializeTextContent();
+        // Cập nhật: Khởi tạo trạng thái bảo lưu audio và cuộn
+        isControlsHidden = true; 
+        updateAudioControlsDisplay(); 
+        
         switchMode('reading'); // Khởi động ở chế độ "Nội dung" mặc định
     </script>
 </body>
